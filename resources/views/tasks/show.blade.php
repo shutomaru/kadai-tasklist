@@ -7,7 +7,7 @@
     <table>
         <tr>
            <th>id</th>
-           <td>{{ $message->id }}</td>
+           <td>{{ $task->id }}</td>
         </tr>
         <tr>
             <th>タスク</th>
