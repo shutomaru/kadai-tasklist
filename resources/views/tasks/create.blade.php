@@ -15,7 +15,7 @@
                 
                 <div class="form-group">
                     {!! Form::label('content','タスク') !!}
-                    {!! Form::text('content','タスクを入力してください。',['class'=>'form-control']) !!}
+                    {!! Form::text('content',null,['class'=>'form-control','placeholder'=>'タスクを入力してください。']) !!}
                 </div>
                 
                 {!! FOrm::submit('投稿',['class'=>'btn btn-primary']) !!}
