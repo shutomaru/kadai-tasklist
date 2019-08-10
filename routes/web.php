@@ -12,7 +12,7 @@
 */
 
 Route::get('/',function(){
-    return view('/');
+    return view('welcome');
 });
 
 Route::resource('tasks','TasksController');
