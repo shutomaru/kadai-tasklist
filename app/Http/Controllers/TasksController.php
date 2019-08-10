@@ -16,7 +16,7 @@ class TasksController extends Controller
     public function index()
     {
         if(\Auth::check()){
-            return view(tasks.index,[
+            return view('tasks.index',[
                 'tasks'=>$tasks,    
             ]);
         }else{
