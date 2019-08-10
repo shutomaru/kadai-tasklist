@@ -15,7 +15,7 @@
             </ul>
                 @else
                     <li>{!! link_to_route('signup.get','Signup',[],['class'=>'nav-link']) !!}</li>
-                    <li>{!! link_to_route('login','Login',['class'=>'nav-link']) !!</li>
+                    <li>{!! link_to_route('login','Login',[],['class'=>'nav-link']) !!</li>
                 @endif
         </div>
     </nav>
