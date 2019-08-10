@@ -3,6 +3,9 @@
 @section('content')
     @if (Auth::check())
         {{ Auth::user()->name }}
+        @if(count($tasks)>0)
+            @include('tasks.tasks',['tasks'=>$tasks])
+        @endif
     @else    
         
         <div class="center jumbotron">
