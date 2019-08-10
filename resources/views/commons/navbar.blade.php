@@ -8,13 +8,15 @@
                 
         <div class="collapse navbar-collapse" id="nav-bar">
             <ul class="navbar-nav mr-auto"></ul>
-                <ul class="navbar-nav">
+            <ul class="navbar-nav">
+                @if(Auth::check())
+                   
                     <li class="nav-item">{!! link_to_route('tasks.create','新規のタスクの追加',[],['class'=>'nav-link']) !!}</li>
-                </ul>
-                <ul class="navbar navbar-nav navbar-right">
-                    <li>{!! link_to_route('signup.get','SignUp',[],['class'=>'nav-link']) !!}</li>
-                    <li><a href="#">Login</a></li>
-                </ul>
+            </ul>
+                @else
+                    <li>{!! link_to_route('signup.get','Signup',[],['class'=>'nav-link']) !!}</li>
+                    <li>{!! link_to_route('login',Login,['class'=>'nav-link'],) !!</li>
+                @endif
         </div>
     </nav>
 </header>    
