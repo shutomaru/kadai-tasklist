@@ -20,11 +20,11 @@
                             <li class="dropdown-item">{!! link_to_route('logout.get','Logout') !!}</li>
                         </ul>
                     </li>
-            </ul>
                 @else
                     <li>{!! link_to_route('signup.get','Signup',[],['class'=>'nav-link']) !!}</li>
                     <li>{!! link_to_route('login','Login',[],['class'=>'nav-link']) !!}</li>
                 @endif
+            </ul>
         </div>
     </nav>
 </header>    
