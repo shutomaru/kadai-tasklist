@@ -11,10 +11,8 @@
 |
 */
 
-Route::get('/',function(){
-    return view('TasksController@index');
-});
-
+Route::get('/','TasksController@index');
+    
 Route::resource('tasks','TasksController');
 
 Route::get('signup','Auth\RegisterController@showRegistrationForm')->name('signup.get');
