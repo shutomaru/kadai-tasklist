@@ -60,6 +60,7 @@ class TasksController extends Controller
         $task=new Task;
         $task->status=$request->status;
         $task->content=$request->content;
+        $task->user_id=$task->user_id;
         $task->save();
         
         return redirect('/');
@@ -114,6 +115,7 @@ class TasksController extends Controller
         $task=Task::find($id);
         $task->status=$request->status;
         $task->content=$request->content;
+        $task->user_id=$task->user_id;
         $task->save();
         
         return redirect('/');
